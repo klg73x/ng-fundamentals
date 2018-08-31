@@ -4,7 +4,7 @@ import { ToastrService } from '../common/toastr.service';
 
 declare let toastr;
 @Component({
-    selector: 'app-eventslist',
+    // selector: 'app-eventslist', --This is no longer needed because we added routing
     template: `
     <div>
         <h1>Upcoming Angular Events</h1>
