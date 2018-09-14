@@ -14,15 +14,12 @@ import { EventService } from './shared/index';
   `]
 })
 
-export class CreateEventComponent implements OnInit {
+export class CreateEventComponent {
     isDirty = true;
-    newEvent: any;
-    constructor ( private router: Router, private eventService: EventService) {
+    constructor(private router: Router, private eventService: EventService) {
 
     }
-    ngOnInit() {
 
-    }
     saveEvent(formValues) {
         this.eventService.saveEvent(formValues);
         this.isDirty = false;
