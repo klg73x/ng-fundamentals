@@ -5,8 +5,14 @@ import { ISession } from '../shared/index';
 @Component({
     templateUrl: 'create-session.component.html',
     styles: [`
-         .container{ padding-left: 20px; padding-right: 20px; }
-         .event-image { height: 100px;}
+        .container{ padding-left: 20px; padding-right: 20px; }
+        .event-image { height: 100px;}
+        em {float:right; color: #E05C65; padding-left: 10px;}
+        .error input, error selsct, .error textarea { background-color: #E3C3C5;}
+        .error ::-webkit-input-placeholder { color: #999; }
+        .error ::-moz-placeholder { color: #999; }
+        .error :-moz-placeholder { color: #999; }
+        .error :ms-input-placeholder { color: #999; }
     `]
 })
 export class CreateSessionComponent implements OnInit {
